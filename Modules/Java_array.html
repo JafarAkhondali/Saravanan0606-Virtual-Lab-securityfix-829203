@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href=".../css/sample/w3.css">
+<link rel="stylesheet" href=".../css/sample/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href=".../css/sample/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="#"><img src="https://www.w3schools.com/images/w3schools.png" style="width:80%;"></a>
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button w3-teal" href="#">Home</a>
+  <a class="w3-bar-item w3-button" href="#">Link 1</a>
+  <a class="w3-bar-item w3-button" href="#">Link 2</a>
+  <a class="w3-bar-item w3-button" href="#">Link 3</a>
+  <a class="w3-bar-item w3-button" href="#">Link 4</a>
+  <a class="w3-bar-item w3-button" href="#">Link 5</a>
+  <div>
+    <a class="w3-bar-item w3-button" onclick="myAccordion('demo')" href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
+    <div id="demo" class="w3-hide">
+      <a class="w3-bar-item w3-button" href="#">Link</a>
+      <a class="w3-bar-item w3-button" href="#">Link</a>
+      <a class="w3-bar-item w3-button" href="#">Link</a>
+    </div>
+  </div>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">W3.CSS: Introduction</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:64px 32px">
+  <h1 class="w3-xxxlarge">W3.CSS</h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+  
+</div>
+
+<div class="w3-container w3-padding-16 w3-card" style="background-color:#eee">
+<h3 class="w3-center">Blog Template</h3>
+<div class="w3-content" style="max-width:800px">
+<img src="img_temp_blog.jpg" style="width:98%;margin:20px 0" alt="Blog Template"><br>
+<div class="w3-row">
+  <div class="w3-col m6">
+    <a href="tryw3css_templates_blog.htm" target="_blank" class="w3-button w3-padding-large w3-dark-grey" style="width:98.5%">Demo</a>
+  </div>
+  <div class="w3-col m6">
+    <a href="w3css_templates.asp" class="w3-button w3-padding-large w3-dark-grey" style="width:98.5%">More Templates &raquo;</a>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer class="w3-container w3-theme" style="padding:32px">
+  <p>Footer information goes here</p>
+</footer>
+     
+</div>
+
+<script type="text/javascript" src=".../js/sample/example.js">
+  // Open and close the sidebar on medium and small screens
+  </script>
+     
+</body>
+</html> 

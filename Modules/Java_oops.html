@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>OOPs Concepts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/sample/w3.css">
+<link rel="stylesheet" href="../css/sample/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="../css/sample/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button w3-teal" href="#">Home</a>
+  <a class="w3-bar-item w3-button" href="#">Link 1</a>
+  <a class="w3-bar-item w3-button" href="#">Link 2</a>
+  <a class="w3-bar-item w3-button" href="#">Link 3</a>
+  <a class="w3-bar-item w3-button" href="#">Link 4</a>
+  <a class="w3-bar-item w3-button" href="#">Link 5</a>
+  <div>
+    <a class="w3-bar-item w3-button" onclick="myAccordion('demo')" href="javascript:void(0)">Java Polymorphism<i class="fa fa-caret-down"></i></a>
+    <div id="demo" class="w3-hide">
+      <a class="w3-bar-item w3-button" href="#">Method Overloading</a>
+      <a class="w3-bar-item w3-button" href="#">Method Overriding</a>
+      <a class="w3-bar-item w3-button" href="#">Covariant Return Type</a>
+      <a class="w3-bar-item w3-button" href="#">Runtime Polymorphism</a>
+      <a class="w3-bar-item w3-button" href="#">Dynamic Binding</a>
+      <a class="w3-bar-item w3-button" href="#">Link</a>
+    </div>
+  </div>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+<div id="myTop" class="w3-container w3-top w3-theme w3-large">
+  <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+  <span id="myIntro" class="w3-hide">W3.CSS: Introduction</span></p>
+</div>
+
+<header class="w3-container w3-theme" style="padding:64px 32px">
+  <h1 class="w3-xxxlarge">OOPs Concepts</h1>
+</header>
+
+<div class="w3-container" style="padding:32px">
+  <h1 class="h1">Java OOPs Concepts</h1>
+<div id="upr">
+<ol>
+<li><a href="#oops">Object-Oriented Programming</a></li>
+<li><a href="#oopsadvantage">Advantage of OOPs over Procedure-oriented programming language</a></li>
+<li><a href="#oopsdifference">Difference between Object-oriented and Object-based programming language.</a></li>
+</ol>
+</div>
+<p>In this page, we will learn about the basics of OOPs. Object-Oriented Programming is a paradigm that provides many concepts, such as <strong>inheritance</strong>, <strong>data binding</strong>, <strong>polymorphism</strong>, etc.</p>
+<p><strong>Simula</strong> is considered the first object-oriented programming language. The programming paradigm where everything is represented as an object is known as a truly object-oriented programming language.</p>
+<p><strong>Smalltalk</strong> is considered the first truly object-oriented programming language.</p>
+<p>The popular object-oriented languages are <a href="java-tutorial">Java</a>, <a href="c-sharp-tutorial">C#</a>, <a href="php-tutorial">PHP</a>, <a href="python-tutorial">Python</a>, <a href="cpp-tutorial">C++</a>, etc.</p>
+<p>The main aim of object-oriented programming is to implement real-world entities, for example, object, classes, abstraction, inheritance, polymorphism, etc.</p>
+<h2 id="oops" class="h2">OOPs (Object-Oriented Programming System)</h2>
+<p><strong>Object</strong> means a real-world entity such as a pen, chair, table, computer, watch, etc. <strong>Object-Oriented Programming</strong> is a methodology or paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts:</p>
+<ul class="points">
+<li><a href="object-and-class-in-java">Object</a></li>
+<li>Class</li>
+<li><a href="inheritance-in-java">Inheritance</a></li>
+<li><a href="runtime-polymorphism-in-java">Polymorphism</a></li>
+<li><a href="abstract-class-in-java">Abstraction</a></li>
+<li><a href="encapsulation">Encapsulation</a></li>
+</ul>
+<p>Apart from these concepts, there are some other terms which are used in Object-Oriented design: </p>
+<ul class="points">
+<li>Coupling</li>
+<li>Cohesion</li>
+<li>Association</li>
+<li>Aggregation</li>
+<li>Composition</li>
+</ul>
+<img src="https://static.javatpoint.com/images/java-oops.png" alt="Java OOPs Concepts" />
+<h2 class="h3">Object</h2>
+<img src="https://static.javatpoint.com/images/objects.png" alt="Java Object" class="imageright" />
+<p>Any entity that has state and behavior is known as an object. For example, a chair, pen, table, keyboard, bike, etc. It can be physical or logical.</p>
+<p>An Object can be defined as an instance of a class. An object contains an address and takes up some space in memory. Objects can communicate without knowing the details of each other's data or code. The only necessary thing is the type of message accepted and the type of response returned by the objects.</p>
+<p><strong>Example:</strong> A dog is an object because it has states like color, name, breed, etc. as well as behaviors like wagging the tail, barking, eating, etc.
+</p>
+<h2 class="h3">Class</h2>
+<p><em>Collection of objects</em> is called class. It is a logical entity.</p>
+<p>A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.</p>
+<h3 class="h3">Inheritance</h3>
+<p><em>When one object acquires all the properties and behaviors of a parent object</em>, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.</p>
+<img src="https://static.javatpoint.com/images/polymorphism.gif" alt="Polymorphism in Java" width="250" height="250" class="imageright" />
+<h3 class="h3">Polymorphism</h3>
+<p>If <em>one task is performed in different ways</em>, it is known as polymorphism. For example: to convince the customer differently, to draw something, for example, shape, triangle, rectangle, etc. </p>
+<p>In Java, we use method overloading and method overriding to achieve polymorphism.</p>
+<p>Another example can be to speak something; for example, a cat speaks meow, dog barks woof, etc.</p>
+<h4 class="h3">Abstraction</h4>
+<p><em>Hiding internal details and showing functionality</em> is known as abstraction. For example phone call, we don't know the internal processing. </p>
+<p>In Java, we use abstract class and interface to achieve abstraction.</p>
+<img src="https://static.javatpoint.com/images/capsule.png" alt="Encapsulation in Java OOPs Concepts" width="200" height="100" class="imageright" />
+<h3 class="h3">Encapsulation</h3>
+<p><em>Binding (or wrapping) code and data together into a single unit are known as encapsulation</em>. For example, a capsule, it is wrapped with different medicines.</p>
+<p> A java class is the example of encapsulation. Java bean is the fully encapsulated class because all the data members are private here.</p>
+<h3 class="h3">Coupling</h3>
+<p>Coupling refers to the knowledge or information or dependency of another class. It arises when classes are aware of each other. If a class has the details information of another class, there is strong coupling. In Java, we use private, protected, and public modifiers to display the visibility level of a class, method, and field. You can use interfaces for the weaker coupling because there is no concrete implementation.</p>
+<h3 class="h3">Cohesion</h3>
+<p>Cohesion refers to the level of a component which performs a single well-defined task. A single well-defined task is done by a highly cohesive method. The weakly cohesive method will split the task into separate parts. The java.io package is a highly cohesive package because it has I/O related classes and interface. However, the java.util package is a weakly cohesive package because it has unrelated classes and interfaces.</p>
+<h3 class="h3">Association</h3>
+<p>Association represents the relationship between the objects. Here, one object can be associated with one object or many objects. There can be four types of association between the objects:</p>
+<ul class="points">
+<li>One to One</li>
+<li>One to Many</li>
+<li>Many to One, and</li>
+<li>Many to Many</li>
+</ul>
+<p>Let's understand the relationship with real-time examples. For example, One country can have one prime minister (one to one), and a prime minister can have many ministers (one to many). Also, many MP's can have one prime minister (many to one), and many ministers can have many departments (many to many).</p>
+<p>Association can be undirectional or bidirectional.</p>
+<h3 class="h3">Aggregation</h3>
+<p>Aggregation is a way to achieve Association. Aggregation represents the relationship where one object contains other objects as a part of its state. It represents the weak relationship between objects. It is also termed as a <em>has-a</em> relationship in Java. Like, inheritance represents the <em>is-a</em> relationship. It is another way to reuse objects.</p>
+<h3 class="h3">Composition</h3>
+<p>The composition is also a way to achieve Association. The composition represents the relationship where one object contains other objects as a part of its state. There is a strong relationship between the containing object and the dependent object. It is the state where containing objects do not have an independent existence. If you delete the parent object, all the child objects will be deleted automatically. </p>
+<hr />
+<a id="oopsadvantage"></a>
+<h2 class="h2">Advantage of OOPs over Procedure-oriented programming language</h2>
+<p>
+1) OOPs makes development and maintenance easier, whereas, in a procedure-oriented programming language, it is not easy to manage if code grows as project size increases.
+</p>
+<p>2) OOPs provides data hiding, whereas, in a procedure-oriented programming language, global data can be accessed from anywhere.
+</p>
+<img alt="Global Data" src="https://static.javatpoint.com/images/globaldata2.png">
+<p>Figure: Data Representation in Procedure-Oriented Programming</p>
+<br>
+<img alt="Object Data" src="https://static.javatpoint.com/images/objectdata2.png">
+<p>Figure: Data Representation in Object-Oriented Programming</p>
+<p>3) OOPs provides the ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.</p>
+<hr />
+<a id="oopsdifference"></a>
+<h2 class="h3">What is the difference between an object-oriented programming language and object-based programming language?</h2>
+<p>Object-based programming language follows all the features of OOPs except Inheritance. JavaScript and VBScript are examples of object-based programming languages.</p>
+<br /><br />
+</div>
+
+</div>
+
+<footer class="w3-container w3-theme" style="padding:32px">
+  <p>Footer information goes here</p>
+</footer>
+     
+</div>
+
+<script type="text/javascript" src=".../js/sample/example.js">
+  // Open and close the sidebar on medium and small screens
+  </script>
+     
+</body>
+</html> 

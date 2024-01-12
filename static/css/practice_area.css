@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+
+.editor-container {
+  height: 600px;
+  margin: 0px auto;
+  position: relative;
+  width: 100vw;
+}
+
+#editor {
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 17px;
+}
+
+.interact-container {
+  height: 300px;
+  left: 0;
+  bottom: 200px;
+  position: relative;
+  width: 100vw;
+  padding-top: 100px;
+}
+
+.interact-container .input-area {
+  height: 137px;
+  width: 406px;
+  resize: none;
+}
+
+.interact-container .output-area {
+  height: 190px;
+  width: 600px;
+  resize: none;
+}
